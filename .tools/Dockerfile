@@ -1,4 +1,4 @@
-FROM graphcore/pytorch:3.1.0-ubuntu-20.04
+FROM graphcore/pytorch-jupyter:3.1.0-ubuntu-20.04
 
 RUN apt-get update \
     && apt-get install -y python3.8-venv sudo \
@@ -13,6 +13,3 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 USER $USERNAME
-
-ADD . /tmp/researchnotebooks
-RUN pip install -r /tmp/researchnotebooks/requirements.txt

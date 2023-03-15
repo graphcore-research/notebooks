@@ -6,7 +6,7 @@ These instructions are intended for members of the Graphcore Research team.
 
  - Is your work ready for sharing? (If in doubt, ask the head of Research.)
  - Did you write all the code, or have you clearly attributed the author?
-   - Is all code and dependencies permissively licensed?
+   - Are all code and dependencies permissively licensed?
  - Check through that there are no references to unreleased products or customers (including in any git history).
 
 **Reviewing a PR**

@@ -4,5 +4,5 @@ GCDOCKER_FLAGS="--ulimit memlock=-1:-1 --net=host --ipc=host $([ -d "/dev/infini
 MOUNT_FLAGS="$([ -d "/scratch_ai-datasets/paperspace" ] && echo "-v /scratch_ai-datasets/paperspace:/datasets:ro")"
 
 docker run --rm -it -v "$(pwd):/work" -w /work ${GCDOCKER_FLAGS} ${MOUNT_FLAGS} \
-    graphcore/pytorch:3.1.0-ubuntu-20.04 \
+    graphcore/pytorch-jupyter:3.1.0-ubuntu-20.04 \
     .tools/.server.sh "${PORT}"
