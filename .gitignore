@@ -1,0 +1,8 @@
+*.so
+*.pyc
+
+.ipynb_checkpoints/
+local/
+out/
+__pycache__/
+.venv/
