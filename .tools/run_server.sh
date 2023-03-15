@@ -1,6 +1,6 @@
 PORT="${1:-8888}"
 
-GCDOCKER_FLAGS="--ulimit memlock=-1:-1 --net=host --ipc=host --cap-add=IPC_LOCK --device=/dev/infiniband/ -e IPUOF_VIPU_API_HOST=${IPUOF_VIPU_API_HOST} -e IPUOF_VIPU_API_PARTITION_ID=${IPUOF_VIPU_API_PARTITION_ID}"
+GCDOCKER_FLAGS="--ulimit memlock=-1:-1 --net=host --ipc=host $([ -d "/dev/infiniband/" ] && echo "--device=/dev/infiniband") --cap-add=IPC_LOCK -e IPUOF_VIPU_API_HOST=${IPUOF_VIPU_API_HOST} -e IPUOF_VIPU_API_PARTITION_ID=${IPUOF_VIPU_API_PARTITION_ID}"
 
 JUPYTER_COMMAND="python -m jupyter lab --port ${PORT} --no-browser --allow-root --ip 0.0.0.0"
 
