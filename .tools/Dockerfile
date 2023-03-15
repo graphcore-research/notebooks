@@ -14,4 +14,5 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 USER $USERNAME
 
-RUN pip install ipywidgets jupyterlab
+ADD . /tmp/researchnotebooks
+RUN pip install -r /tmp/researchnotebooks/requirements.txt
