@@ -10,7 +10,7 @@ See [Contributing.md](Contributing.md).
 
 You can test out your notebooks in a few ways:
 
- 1. Standalone Jupyter server, `.tools/run_server.sh` on Graphcore CL1 (uses Docker)
+ 1. Standalone Jupyter server, `.tools/run_server.sh` (uses Docker)
  2. VS Code devcontainers "Open in Container" (uses Docker)
  3. Using a virtual environment (no Docker)
 
@@ -20,7 +20,9 @@ The script `.tools/run_server.sh` will start a server that looks quite like Pape
 
 **2. Devcontainers**
 
-We'd suggest also using a virtual env, so that it's easy to run `setup.sh` to load the same environment variables as Paperspace Gradient. We haven't configured this for using real IPUs, as it is hard to support both cases in `devcontainer.json`.
+If using devcontainers, use "Open in Container" to build the container & open the project. We haven't configured this for using real IPUs, as it is hard to support both cases in `devcontainer.json`. (Note that for git commands, you might want to use "Create new integrated terminal (local)".)
+
+We'd suggest also using a virtual env, so that it's easy to run `setup.sh` to load the same environment variables as Paperspace Gradient. Make sure the Jupyter kernel is set to use the Python interpreter from the venv.
 
 ```bash
 python -m venv --system-site-packages .venv
@@ -31,7 +33,7 @@ echo 'export POPTORCH_IPU_MODEL=1' >> .venv/bin/activate
 
 **3. VirtualEnv**
 
-Since this doesn't run in the same Docker image as you will use on Paperspace, it may have various differences, but could also be less friction to use.
+Since this doesn't run in the same Docker image as you will use on Paperspace, it may have various differences, but could also be less friction to use. If using VS Code, make sure the Jupyter kernel is set to use the Python interpreter from the venv.
 
 ```bash
 python3 -m venv .venv
