@@ -46,7 +46,7 @@ python3 -m venv .venv
     SETUP_NO_JUPYTER=1 source $VIRTUAL_ENV/../setup.sh
 
 source .venv/bin/activate
-pip install $POPLAR_SDK_ENABLED/poptorch*.whl
+pip install $POPLAR_SDK_ENABLED/../poptorch*.whl
 
 # Optionally set $PUBLIC_DATASET_DIR to point to your datasets
 ```
