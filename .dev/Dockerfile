@@ -1,4 +1,4 @@
-FROM graphcore/pytorch-jupyter:3.1.0-ubuntu-20.04
+FROM graphcore/pytorch-jupyter:3.2.0-ubuntu-20.04
 
 RUN apt-get update \
     && apt-get install -y python3.8-venv sudo \

@@ -4,7 +4,7 @@ A collection of notebooks developed for researchers, designed for use with [IPUs
 
 | Link | Path | Description |
 | --- | --- | --- |
-| [![Run on Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/graphcore-research/research-notebooks?container=graphcore%2Fpytorch-jupyter%3A3.1.0-ubuntu-20.04&machine=Free-IPU-POD4&file=%2Fhello_pytorch%2FHelloPyTorch.ipynb) | [hello_pytorch](hello_pytorch/HelloPyTorch.ipynb) | Minimal PyTorch example |
+| [![Run on Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/graphcore-research/notebooks?container=graphcore%2Fpytorch-jupyter%3A3.2.0-ubuntu-20.04&machine=Free-IPU-POD4&file=%2Fhello_pytorch%2FHelloPyTorch.ipynb) | [hello_pytorch](hello_pytorch/HelloPyTorch.ipynb) | Minimal PyTorch example |
 
 _For testing locally and contributing, see [development.md](.dev/development.md)._
 
