@@ -2,10 +2,11 @@
 
 PORT="${1:-8888}"
 
-set -e
 set -o xtrace
 
 SETUP_NO_JUPYTER=1 source setup.sh
+
+set -e
 
 mkdir -p "${POPLAR_EXECUTABLE_CACHE_DIR}" "${DATASET_DIR}" "${CHECKPOINT_DIR}"
 

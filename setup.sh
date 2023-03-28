@@ -2,7 +2,7 @@
 # Copyright (c) 2022 Graphcore Ltd. All rights reserved.
 # Script to be sourced on launch of the Gradient Notebook
 
-DETECTED_NUMBER_OF_IPUS=$(python .gradient/available_ipus.py)
+DETECTED_NUMBER_OF_IPUS=$(python .dev/available_ipus.py)
 if [[ "$1" == "test" ]]; then
     IPU_ARG="${DETECTED_NUMBER_OF_IPUS}"
 else
