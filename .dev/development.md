@@ -31,7 +31,7 @@ Since this doesn't run in the same Docker image as you will use on Paperspace, i
 python3 -m venv .venv
 
 # In .venv/bin/activate
-    POPLAR_SDK_PATH=/opt/gc/poplar_sdk-ubuntu_20_04-3.0.0+1145-1b114aac3a
+    POPLAR_SDK_PATH=/opt/gc/poplar_sdk-ubuntu_20_04-3.1.0+1205-58b501c780
     source "${POPLAR_SDK_PATH}/enable"
     source $POPLAR_SDK_PATH/popart*/enable.sh
     export PATH="${PATH}:${POPLAR_SDK_ENABLED}/bin"

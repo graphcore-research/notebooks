@@ -1,8 +1,12 @@
 *.so
 *.pyc
 
+.env
+
 .ipynb_checkpoints/
 local/
 out/
 __pycache__/
+third_party/
 .venv/
+.vscode/
