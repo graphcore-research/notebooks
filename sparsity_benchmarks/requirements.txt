@@ -1,7 +1,4 @@
-black
-isort
 numpy
 torch
-black
 tabulate
 matplotlib
