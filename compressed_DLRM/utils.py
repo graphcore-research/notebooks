@@ -1,3 +1,8 @@
+# Copyright (c) 2023 Graphcore Ltd. All rights reserved.
+# Contains code adapted from
+# https://github.com/facebookresearch/dlrm/blob/main/dlrm_data_pytorch.py
+# https://github.com/facebookresearch/dlrm/blob/main/data_loader_terabyte.py
+
 import dataclasses
 import math
 import os
@@ -39,12 +44,6 @@ class WandBLogger:
             data,
             step=self.sample,
         )
-
-
-# Data pipeline
-# Adapted from
-# https://github.com/facebookresearch/dlrm/blob/main/dlrm_data_pytorch.py
-# https://github.com/facebookresearch/dlrm/blob/main/data_loader_terabyte.py
 
 
 def _transform_features(
