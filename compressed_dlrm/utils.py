@@ -2,6 +2,7 @@
 # Contains code adapted from
 # https://github.com/facebookresearch/dlrm/blob/main/dlrm_data_pytorch.py
 # https://github.com/facebookresearch/dlrm/blob/main/data_loader_terabyte.py
+# licensed under MIT license.
 
 import dataclasses
 import math
